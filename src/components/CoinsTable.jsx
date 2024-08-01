@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Pagination from "@material-ui/lab/Pagination";
+import { Pagination } from '@material-ui/lab';
+
+
 import {
   Container,
   createTheme,
@@ -44,7 +46,7 @@ const darkTheme = createTheme({
   },
 });
 export const CoinsTable = () => {  
-  const [load, setLoad] = useState(false);
+  //const [load, setLoad] = useState(false);
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const { currency, symbol } = CryptoState();
